@@ -11,13 +11,20 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #222;
+            background-color: #f5f0eb;
+            color: #332d29;
+            line-height: 1.6;
         }
 
+        /* Navigation Bar */
         header {
-            background-color: #222;
-            padding: 15px 40px;
+            background-color: #2c2523;
+            padding: 12px 30px;
+            border-radius: 40px;
+            width: 780px;
+            max-width: 90%;
+            margin: 40px auto;
+            box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         nav {
@@ -27,71 +34,155 @@
         }
 
         nav h2 {
-            color: white;
+            color: #ffffff;
             margin: 0;
+            transition: color 0.3s;
+        }
+
+        nav h2:hover {
+            color: #c48b5e;
         }
 
         nav ul {
             display: flex;
             list-style: none;
-            gap: 25px;
+            gap: 10px;
             margin: 0;
+            padding: 0;
         }
 
         nav a {
-            color: white;
+            color: #e8e0d5;
             text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         nav a:hover {
-            color: lightblue;
+            background-color: #c48b5e;
+            color: #ffffff;
         }
-
 
         main {
             width: 80%;
             margin: auto;
         }
 
+        /* Hero Section */
         #home {
-            text-align: center;
-            padding: 100px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 60px 20px;
         }
 
-        #home h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
+        .home1 {
+            background-color: #ffffff;
+            color: #2c2523;
+            border: 1px solid #e0d5c8;
+            border-radius: 20px;
+            padding: 25px;
+            width: 350px;
+            transition: background-color 0.3s, color 0.3s, padding 0.3s, box-shadow 0.3s;
         }
 
-        #home p {
+        .home1:hover {
+            background-color: #c48b5e;
+            color: #ffffff;
+            padding: 30px;
+            box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .home1 h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        .home2 {
+            background-color: #ffffff;
+            color: #2c2523;
+            border: 1px solid #e0d5c8;
+            border-radius: 20px;
+            padding: 25px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            transition: background-color 0.3s, color 0.3s, padding 0.3s, box-shadow 0.3s;
+        }
+
+        .home2:hover {
+            background-color: #2c2523;
+            color: #ffffff;
+            padding: 30px;
+            box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .degree-name p {
             font-size: 18px;
+            margin: 0;
+            font-weight: bold;
+            transition: color 0.3s;
         }
 
+        .home2:hover .degree-name p {
+            color: #c48b5e;
+        }
 
+        .skills1 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skills1clr {
+            background-color: #f0e8de;
+            color: #332d29;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s, padding 0.3s, box-shadow 0.3s;
+        }
+
+        .skills1clr:hover {
+            background-color: #c48b5e;
+            color: #ffffff;
+            padding: 8px 16px;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* General Section Styling */
         section {
-            padding: 50px 20px;
+            padding: 40px 20px;
         }
 
         section h2 {
-            color: #222;
+            color: #2c2523;
             margin-bottom: 20px;
         }
 
-
-        #about p {
-            line-height: 1.6;
-        }
-
-
-
-        .project {
-            background-color: white;
+        /* Info Card Styling */
+        .info-card {
+            background-color: #ffffff;
+            color: #332d29;
+            border: 1px solid #e0d5c8;
             padding: 20px;
+            border-radius: 8px;
             margin-bottom: 15px;
-            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, padding 0.3s, box-shadow 0.3s;
         }
 
+        .info-card:hover {
+            background-color: #2c2523;
+            color: #ffffff;
+            padding: 25px;
+            box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+        }
 
+        /* Skills Section Styling */
         .skills {
             display: flex;
             gap: 15px;
@@ -99,208 +190,149 @@
         }
 
         .skill {
-            background-color: white;
+            background-color: #ffffff;
+            color: #332d29;
+            border: 1px solid #e0d5c8;
             padding: 12px 20px;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s, padding 0.3s, box-shadow 0.3s;
         }
 
-
-        #contact a {
-            color: #222;
+        .skill:hover {
+            background-color: #c48b5e;
+            color: #ffffff;
+            padding: 15px 25px;
+            box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.2);
         }
 
+        /* Buttons & Link Styling */
+        .bn1 {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #ffffff;
+            color: #2c2523;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 1px solid #2c2523;
+            margin-top: 10px;
+            transition: background-color 0.3s, color 0.3s, padding 0.3s, box-shadow 0.3s;
+        }
 
+        .bn1:hover {
+            background-color: #c48b5e;
+            color: #ffffff;
+            border-color: #c48b5e;
+            padding: 10px 20px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
         footer {
-            background-color: #222;
-            color: white;
+            background-color: #2c2523;
+            color: #e8e0d5;
             text-align: center;
             padding: 20px;
             margin-top: 30px;
+            transition: color 0.3s;
+        }
+
+        footer:hover {
+            color: #c48b5e;
         }
     </style>
 </head>
 
-
 <body>
-
-    <!-- Navigation Bar -->
 
     <header>
         <nav>
-
             <h2>Dhanvanth</h2>
 
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#client-work">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
         </nav>
     </header>
 
-
-    <!-- Main Content -->
-
     <main>
 
-        <!-- Home Section -->
-
         <section id="home">
+            <div class="home1">
+                <h1>Hi, I'm Dhanvanth</h1>
+            </div>
 
-            <h1>Hi, I'm Dhanvanth</h1>
-
-            <p>
-                B.Tech Computer Science Student
-            </p>
-
-            <p>
-                First Year | Learning | Building | Exploring
-            </p>
-
+            <div class="home2">
+                <div class="degree-name">
+                    <p>B.Tech Computer Science Student</p>
+                </div>
+                <div class="skills1">
+                    <div class="skills1clr">First Year</div>
+                    <div class="skills1clr">Learning</div>
+                    <div class="skills1clr">Building</div>
+                    <div class="skills1clr">Exploring</div>
+                </div>
+            </div>
         </section>
-
-
-        <!-- About Section -->
 
         <section id="about">
-
             <h2>About Me</h2>
-
-            <p>
-                I am Dhanvanth, a first year B.Tech Computer Science
-                student. I am interested in technology and programming.
-            </p>
-
-            <p>
-                I like working on real-life projects and learning new
-                technologies by creating things on my own.
-            </p>
-
-            <p>
-                My interest in real-life projects inspired me to join
-                the Robocon Club, where I want to learn more about
-                technology, robotics and teamwork.
-            </p>
-
-            <p>
-                One of my academic goals is to maintain a CGPA of
-                9.5 or above during my studies.
-            </p>
-
+            <div class="info-card">
+                <p>I am Dhanvanth, a first year B.Tech Computer Science student. I am interested in technology and programming.</p>
+            </div>
+            <div class="info-card">
+                <p>I like working on real-life projects and learning new technologies by creating things on my own.</p>
+            </div>
+            <div class="info-card">
+                <p>My interest in real-life projects inspired me to join the Robocon Club, where I want to learn more about technology, robotics and teamwork.</p>
+            </div>
+            <div class="info-card">
+                <p>One of my academic goals is to maintain a high CGPA during my studies.</p>
+            </div>
         </section>
-
-
-        <!-- Projects Section -->
-
-        <section id="projects">
-
-            <h2>My Projects</h2>
-
-            <div class="project">
-
-                <h3>Portfolio Website</h3>
-
-                <p>
-                    A simple personal portfolio website created using
-                    HTML and CSS.
-                </p>
-
-            </div>
-
-
-            <div class="project">
-
-                <h3>Web Development Projects</h3>
-
-                <p>
-                    I am currently learning HTML and CSS and creating
-                    small websites to improve my web development skills.
-                </p>
-
-            </div>
-
-
-            <div class="project">
-
-                <h3>Real-Life Projects</h3>
-
-                <p>
-                    I am interested in creating projects that solve
-                    real-world problems and help me learn through
-                    practical experience.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- Skills Section -->
 
         <section id="skills">
-
             <h2>My Skills</h2>
 
             <div class="skills">
-
-                <div class="skill">HTML</div>
-
-                <div class="skill">CSS</div>
-
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
                 <div class="skill">C Programming</div>
-
                 <div class="skill">Git & GitHub</div>
-
                 <div class="skill">Problem Solving</div>
-
             </div>
-
         </section>
 
+        <section id="client-work">
+            <h2>Client Work & Experience</h2>
 
-        <!-- Contact Section -->
+            <div class="info-card">
+                <p>I started learning basic HTML and CSS during my Class 12 board exam leave. Out of curiosity and interest in web development, I built custom websites for 5 local shops and successfully sold the websites to them.</p>
+            </div>
+
+            <div class="info-card">
+                <p>This experience gave me real-world practice in designing, structuring content, and delivering working websites to real owners. I am eager and ready to build many more real-life websites to improve my skills.</p>
+                <p>You can check out my Git repositories and code activity on my GitHub profile:</p>
+                <a href="https://github.com/sdhanavanthsaisai-creator" target="_blank" class="bn1">View My GitHub Profile</a>
+            </div>
+        </section>
 
         <section id="contact">
-
             <h2>Contact Me</h2>
 
-            <p>
-                Email:
-                <a href="mailto:dhanavanthsai.s@gmail.com">
-                    dhanavanthsai.s@gmail.com
-                </a>
-            </p>
-
-            <p>
-                GitHub:
-                <a href="https://github.com/sdhanavanthsaisai-creator" target="_blank">
-                    My GitHub
-                </a>
-            </p>
-
-            <p>
-                LinkedIn:
-                <a href="https://www.linkedin.com/in/dhanavanth-sai-16a272414/" target="_blank">
-                    My LinkedIn
-                </a>
-            </p>
-
+            <p>Email: <a href="mailto:dhanavanthsai.s@gmail.com" class="bn1">dhanavanthsai.s@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/sdhanavanthsaisai-creator" target="_blank" class="bn1">My GitHub Profile</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/dhanavanth-sai-16a272414/" target="_blank" class="bn1">My LinkedIn Profile</a></p>
         </section>
 
     </main>
 
-
-    <!-- Footer -->
-
     <footer>
-
-        <p>
-            © 2026 Dhanvanth. All Rights Reserved.
-        </p>
-
+        <p>© 2026 Dhanvanth. All Rights Reserved.</p>
     </footer>
 
 </body>
